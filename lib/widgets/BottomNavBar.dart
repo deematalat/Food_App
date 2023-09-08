@@ -42,15 +42,16 @@ class _BottomNavBarState extends State<BottomNavBar> {
         }
         if(index == 1) {
           ChangeScreen(context,ProfilScreen());
-          initState();
+          setState(() {});
         }
         if (index == 3) {
           ChangeScreen(context, ShoppingBag());
-          initState();
+          setState(() {});
         }
         if (index == 2) {
           ChangeScreen(context, Home());
-          initState();
+          //todo:add to new version
+          setState(() {});
         }
       },
     );

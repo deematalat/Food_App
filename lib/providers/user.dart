@@ -11,7 +11,7 @@ class UserProvider with ChangeNotifier {
   FirebaseAuth _auth;
   Status _status = Status.uninitialized;
   UserServices _userServices = new UserServices();
-  UserModel _userModel = UserModel() ; // Initialize with an empty user model
+  UserModel _userModel = UserModel("","","","") ; // Initialize with an empty user model
   User? _user; // Initialize as nullable
 
   final formkey = GlobalKey<FormState>();

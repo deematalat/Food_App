@@ -9,7 +9,7 @@ class ProductProvider with ChangeNotifier {
   ProductService productService = ProductService();
   List<ProductModel> products = [];
   List<ItemModel> productsCards = [];
-  List<ItemModel> productsBags = [];
+  bool isAdd=false;
   List<ProductModel> productsByCategory = [];
   List<ProductModel> productsbyRastaurants = [];
   List<ProductModel> productsSearched = [];
@@ -46,8 +46,7 @@ class ProductProvider with ChangeNotifier {
     notifyListeners();
   }
   Future addProductToCollection(ItemModel product)async {
-    productsBags =
-        await productService.addProductToCollection(product);
+    isAdd= await productService.addProductToCollection(product);
     notifyListeners();
   }
   Future deleteProductFromCollection(String productId) async{

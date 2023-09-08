@@ -8,9 +8,14 @@ import '../Helpers/screen_navigation.dart';
 import '../providers/user.dart';
 import 'loginScreen.dart';
 
-class ProfilScreen extends StatelessWidget {
+class ProfilScreen extends StatefulWidget {
   const ProfilScreen({Key? key}) : super(key: key);
 
+  @override
+  State<ProfilScreen> createState() => _ProfilScreenState();
+}
+
+class _ProfilScreenState extends State<ProfilScreen> {
   @override
   Widget build(BuildContext context) {
     final user = Provider.of<UserProvider>(context);
@@ -65,7 +70,7 @@ class ProfilScreen extends StatelessWidget {
               Positioned(
              bottom:60 ,
              right:90,
-             child:   Text(user.userModel.email),)
+             child:   Text(user.userModel.email!),)
            ]
        ),
          ),
@@ -161,7 +166,6 @@ class ProfilScreen extends StatelessWidget {
     ),
     ));
   }
-
 }
 
 

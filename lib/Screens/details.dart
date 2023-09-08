@@ -119,7 +119,9 @@ class _DetailsState extends State<Details> {
 
                     //app.changeLoading();
                     print("All set loading");
-                     bool value =  await product.addProductToCollection(item);
+                    //todo:add to the new version
+                        await product.addProductToCollection(item);
+                    bool value =product.isAdd;
                      if(value){
                        print("Item added to cart");
                        ScaffoldMessenger.of(context).showSnackBar(

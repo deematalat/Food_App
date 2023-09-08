@@ -49,7 +49,7 @@ class _HomeState extends State<Home> {
               // ),
               accountEmail: CustomText(
 
-                text: user.userModel.email,
+                text: user.userModel.email!,
                 color: Colors.white,
                 size: 16, fontWeight:FontWeight.w300,
               ),

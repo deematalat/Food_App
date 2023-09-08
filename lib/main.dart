@@ -34,7 +34,9 @@ void main() async {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         home: ScreenController(),
-      )));
+      )
+
+  ));
 }
 
 class ScreenController extends StatelessWidget {

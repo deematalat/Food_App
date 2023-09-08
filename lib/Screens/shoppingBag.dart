@@ -118,7 +118,7 @@ class _ShoppingBagState extends State<ShoppingBag> {
                           ),
                         ),
                         SizedBox(
-                          width: 70,
+                          width: 50,
                         ),
                         IconButton(
                           icon: Icon(
@@ -134,7 +134,8 @@ class _ShoppingBagState extends State<ShoppingBag> {
                         )
 
                       ],
-                    )));
+                    )
+                ));
           }),
     );
   }

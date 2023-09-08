@@ -105,8 +105,11 @@ class ProductService {
       String id = docRef.id;
       await docRef.update({'id': id});
       print("Product added successfully with ID: ${docRef.id}");
+      //todo:add to new version
+      return true;
     } catch (e) {
       print("Error adding product: $e");
+      return false;
     }
   }
 
